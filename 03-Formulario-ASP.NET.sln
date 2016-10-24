@@ -5,6 +5,19 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-Formulario-ASP.NET", "03-Formulario-ASP.NET\03-Formulario-ASP.NET.csproj", "{F811703B-5537-4CE6-9EFE-F5670318D84A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{C9E42FCD-4AFB-4F6E-8816-9FFE5629700C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{B158CE66-BD61-47AF-ADC7-C14A73DD6FFB}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{CD74FA87-9F94-470B-92A5-C9A27E0DDCE8}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\03-Formulario-ASPNET.json = PublishScripts\Templates\03-Formulario-ASPNET.json
+		PublishScripts\Templates\03-Formulario-ASPNET.param.dev.json = PublishScripts\Templates\03-Formulario-ASPNET.param.dev.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +31,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B158CE66-BD61-47AF-ADC7-C14A73DD6FFB} = {C9E42FCD-4AFB-4F6E-8816-9FFE5629700C}
+		{CD74FA87-9F94-470B-92A5-C9A27E0DDCE8} = {C9E42FCD-4AFB-4F6E-8816-9FFE5629700C}
 	EndGlobalSection
 EndGlobal

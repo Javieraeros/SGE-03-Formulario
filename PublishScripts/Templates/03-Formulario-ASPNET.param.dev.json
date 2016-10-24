@@ -1,0 +1,29 @@
+{
+  "siteName": {
+    "value": "Formulariofjruiz"
+  },
+  "hostingPlanName": {
+    "value": "ServicePlan8bc4d01e-a94c"
+  },
+  "siteLocation": {
+    "value": "South Central US"
+  },
+  "sku": {
+    "value": "Free"
+  },
+  "workerSize": {
+    "value": "0"
+  },
+  "siteMode": {
+    "value": "Limited"
+  },
+  "computeMode": {
+    "value": "0"
+  },
+  "subscriptionId": {
+    "value": "1c2f32ee-f830-4e33-8817-b87819e9dcb9"
+  },
+  "resourceGroup": {
+    "value": "AppWeb"
+  }
+}
