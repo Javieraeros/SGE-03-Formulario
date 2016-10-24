@@ -9,11 +9,11 @@ namespace _03_Formulario_ASP.NET.Controllers
 {
     public class HomeController : Controller
     {
-        ListadoPersona miLista = new ListadoPersona();
         // GET: Home
         public ActionResult Index()
         {
-            
+            ListadoPersona miLista = new ListadoPersona();
+            miLista.ListadoDefecto();
             return View(miLista.devuelveListado());
         }
 
@@ -26,8 +26,7 @@ namespace _03_Formulario_ASP.NET.Controllers
         public ActionResult Create(Persona p)
         {
             //Meto la persona en la clase listado de personas
-            miLista.aniadePersona(p);
-            return View("Index",miLista.devuelveListado());
+            return View();
         }
     }
 }
